@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="98435890-F38A-C8AF-1D57-DF14737BA211" mainViewID="6D7717C4-DEB2-D027-8823-BB74A393BB4B">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:21:31 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<Diagrams>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogicalSubView" name="Logical - SubView_1" id="F5B15A47-E23C-5A89-672D-8789F0848601">
+<createdBy>Administrator</createdBy>
+<modifiedBy>Administrator</modifiedBy>
+<createdTime>2018-02-22 21:35:45 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+</Diagram>
+</Diagrams>
+<mainView class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="6D7717C4-DEB2-D027-8823-BB74A393BB4B">
+<createdBy>Administrator</createdBy>
+<modifiedBy>Administrator</modifiedBy>
+<createdTime>2018-02-22 21:33:25 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+</mainView>
+</LogicalDesign>

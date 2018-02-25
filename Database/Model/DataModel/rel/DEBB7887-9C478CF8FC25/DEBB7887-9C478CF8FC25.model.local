@@ -1,0 +1,677 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational" id="DEBB7887-3979-7B30-42C0-9C478CF8FC25" mainViewID="01F1298C-E185-8353-B1E3-97301B0062BE">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:31:58 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<Tables>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03E1D5C5-9CD5-ADC7-42AA-E3B1A3E9B0DB" name="ANSWER">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:53:06 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="24F0819C-4203-1E6A-18E3-78BC6D507DE7">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:11 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QuestionId" id="1840E805-F748-DE05-B0AA-EA6847A45485">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:11 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38809F62-17A2-1534-D454-BC98E242A485" referredColumn="53AEBBBE-79C7-9EB2-6DAE-5BEF4A2B3AFC"/>
+</associations>
+</Column>
+<Column name="Text" id="DF6EF4FC-788D-B1B3-30B8-610D59B8F698">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:11 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IsCorrect" id="FE0AD8E1-4342-6B32-FC55-D771C60A3083">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:11 UTC</createdTime>
+<comment>0 = false&lt;br/&gt;1 = true</comment>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57430ED1-BD08-7A10-7AE0-298A6B3BAE95" name="ANSWER_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:11 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24F0819C-4203-1E6A-18E3-78BC6D507DE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD564F89-4293-65D6-84B4-A69BBF7A1835" name="ANSWER_QUESTION_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:46 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1840E805-F748-DE05-B0AA-EA6847A45485"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E05847EB-E446-93BF-3572-2906289B31CD" name="COURSE">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:52:30 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="BB190731-AB63-DF89-DC36-60DA0EAF4D36">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:56:39 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Code" id="4A77AAE0-917B-0EEA-2DBC-F8078C5C6721">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:56:39 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="53E667EF-FFFD-FEC1-6C60-D726E2858C90">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:56:39 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="2B65DC4E-5872-7D06-D384-BFD860F6C787">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:56:39 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B468B95-8162-BA59-EBC0-5361373A9E28" name="COURSE_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:56:39 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB190731-AB63-DF89-DC36-60DA0EAF4D36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10775A4E-4B86-CA25-99E3-A0E325E1D32C" name="PLAYER">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:53:45 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="DE9FF097-82BD-B427-C087-BE7A62691F99">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:05:19 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="50F76DD7-641A-8665-8061-E60246C1EE16">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:05:19 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="19D21906-9592-AFC3-40C4-6DDEBB5D155E">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:05:19 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF12FB7B-6618-6C5D-4EE9-383DFA8D6EA3" name="PLAYER_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:05:19 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE9FF097-82BD-B427-C087-BE7A62691F99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED51E96A-5668-2019-92B6-3F6F07037273" name="QUESTION">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:52:59 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="53AEBBBE-79C7-9EB2-6DAE-5BEF4A2B3AFC">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:58:37 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CourseId" id="E363D995-4762-AAA6-4655-0AFD5FE357B6">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:58:37 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF693B99-C4FF-FB19-D910-015554AB33F9" referredColumn="BB190731-AB63-DF89-DC36-60DA0EAF4D36"/>
+</associations>
+</Column>
+<Column name="Text" id="59E904E9-5EE5-80D2-8B64-D17C566DD9C9">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:58:37 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Level" id="205965D1-E572-CC39-78D6-6209F2FFE9E7">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:58:37 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4836D855-97E2-252D-A866-1F7EB1B54C6B" name="QUESTION_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:58:37 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53AEBBBE-79C7-9EB2-6DAE-5BEF4A2B3AFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15178AEC-476E-06C7-5C8D-661020D43FB1" name="QUESTION_COURSE_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:59:35 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E363D995-4762-AAA6-4655-0AFD5FE357B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B9D0ABD-0F3C-1CB2-9FBA-468BA3C11B0E" name="VISIT">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:54:03 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="FD4D8347-2931-D66C-590D-5F5951695E0A">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:06:57 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PlayerId" id="F6840A4E-90DC-427E-14F0-77041BD204EA">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:06:57 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDFB17CE-1AB4-C65D-1C8F-74A322152930" referredColumn="DE9FF097-82BD-B427-C087-BE7A62691F99"/>
+</associations>
+</Column>
+<Column name="Date" id="F8794950-9E66-F828-7138-FCB001F92DD6">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:06:57 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Time" id="38749E80-928E-E349-738A-E0080096DC8E">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:06:57 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="871C7524-A93B-B16F-9ABF-D06FFA2E655D" name="VISIT_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:06:57 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD4D8347-2931-D66C-590D-5F5951695E0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3087EA22-1A67-5C6A-95D5-4569935B8319" name="VISIT_PLAYER_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:07:29 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6840A4E-90DC-427E-14F0-77041BD204EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41619E33-1844-AFBF-16BC-BE577D5FFC5D" name="VISIT_QUESTION">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:54:31 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="C192A1E2-282A-54F6-B5BD-F7783D036C99">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:21 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QuestionId" id="AB05CF29-6BAD-72C5-99B5-0A6C1742F508">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:21 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C448A9AE-105E-D40A-188A-D81D8812D03C" referredColumn="53AEBBBE-79C7-9EB2-6DAE-5BEF4A2B3AFC"/>
+</associations>
+</Column>
+<Column name="VisitId" id="03A8FDC8-D24E-7AEC-38DC-89671713081A">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:21 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="378AD998-0003-B685-25EB-5B0928DB9C56" referredColumn="FD4D8347-2931-D66C-590D-5F5951695E0A"/>
+</associations>
+</Column>
+<Column name="AnswerId" id="1397A639-8AB5-2DB5-6A36-F3AB5FE06156">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:13:55 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79705376-5C9D-F1D6-C366-444FD3AF9B39" referredColumn="24F0819C-4203-1E6A-18E3-78BC6D507DE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10AD116E-5E6C-750C-BC75-C89201FEF109" name="VISIT_QUESTION_PK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:21 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C192A1E2-282A-54F6-B5BD-F7783D036C99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D78C670-43EB-7812-8EAB-1CB85F4EE382" name="VISIT_QUESTION__UN">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:14:10 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB05CF29-6BAD-72C5-99B5-0A6C1742F508"/>
+<colUsage columnID="03A8FDC8-D24E-7AEC-38DC-89671713081A"/>
+<colUsage columnID="1397A639-8AB5-2DB5-6A36-F3AB5FE06156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F9ACBB1-AB47-90EF-87D6-E18661EF2BC9" name="VISIT_QUESTION_QUESTION_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:59 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB05CF29-6BAD-72C5-99B5-0A6C1742F508"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50AF3CB6-C9EA-A3A6-7E7D-C89BB6D8D0EA" name="VISIT_QUESTION_VISIT_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:59 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03A8FDC8-D24E-7AEC-38DC-89671713081A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8A0135C-7BEC-4586-FC08-E92ADD38B9A8" name="VISIT_QUESTION_ANSWER_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:13:55 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1397A639-8AB5-2DB5-6A36-F3AB5FE06156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+</Tables>
+<ForeignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38809F62-17A2-1534-D454-BC98E242A485" containerWithKeyObject="03E1D5C5-9CD5-ADC7-42AA-E3B1A3E9B0DB" localFKIndex="BD564F89-4293-65D6-84B4-A69BBF7A1835" name="ANSWER_QUESTION_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:02:46 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>QUESTION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ED51E96A-5668-2019-92B6-3F6F07037273</referredTableID>
+<keyObject>4836D855-97E2-252D-A866-1F7EB1B54C6B</keyObject>
+<referredKeyID>4836D855-97E2-252D-A866-1F7EB1B54C6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CF693B99-C4FF-FB19-D910-015554AB33F9" containerWithKeyObject="ED51E96A-5668-2019-92B6-3F6F07037273" localFKIndex="15178AEC-476E-06C7-5C8D-661020D43FB1" name="QUESTION_COURSE_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 21:59:35 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>COURSE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E05847EB-E446-93BF-3572-2906289B31CD</referredTableID>
+<keyObject>5B468B95-8162-BA59-EBC0-5361373A9E28</keyObject>
+<referredKeyID>5B468B95-8162-BA59-EBC0-5361373A9E28</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EDFB17CE-1AB4-C65D-1C8F-74A322152930" containerWithKeyObject="2B9D0ABD-0F3C-1CB2-9FBA-468BA3C11B0E" localFKIndex="3087EA22-1A67-5C6A-95D5-4569935B8319" name="VISIT_PLAYER_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:07:29 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>PLAYER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>10775A4E-4B86-CA25-99E3-A0E325E1D32C</referredTableID>
+<keyObject>DF12FB7B-6618-6C5D-4EE9-383DFA8D6EA3</keyObject>
+<referredKeyID>DF12FB7B-6618-6C5D-4EE9-383DFA8D6EA3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="79705376-5C9D-F1D6-C366-444FD3AF9B39" containerWithKeyObject="41619E33-1844-AFBF-16BC-BE577D5FFC5D" localFKIndex="A8A0135C-7BEC-4586-FC08-E92ADD38B9A8" name="VISIT_QUESTION_ANSWER_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:13:55 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>ANSWER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>03E1D5C5-9CD5-ADC7-42AA-E3B1A3E9B0DB</referredTableID>
+<keyObject>57430ED1-BD08-7A10-7AE0-298A6B3BAE95</keyObject>
+<referredKeyID>57430ED1-BD08-7A10-7AE0-298A6B3BAE95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C448A9AE-105E-D40A-188A-D81D8812D03C" containerWithKeyObject="41619E33-1844-AFBF-16BC-BE577D5FFC5D" localFKIndex="4F9ACBB1-AB47-90EF-87D6-E18661EF2BC9" name="VISIT_QUESTION_QUESTION_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:59 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>QUESTION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ED51E96A-5668-2019-92B6-3F6F07037273</referredTableID>
+<keyObject>4836D855-97E2-252D-A866-1F7EB1B54C6B</keyObject>
+<referredKeyID>4836D855-97E2-252D-A866-1F7EB1B54C6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="378AD998-0003-B685-25EB-5B0928DB9C56" containerWithKeyObject="41619E33-1844-AFBF-16BC-BE577D5FFC5D" localFKIndex="50AF3CB6-C9EA-A3A6-7E7D-C89BB6D8D0EA" name="VISIT_QUESTION_VISIT_FK">
+<createdBy>Administrator</createdBy>
+<createdTime>2018-02-22 22:09:59 UTC</createdTime>
+<ownerDesignName>DataModel</ownerDesignName>
+<referredTableLongName>VISIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B9D0ABD-0F3C-1CB2-9FBA-468BA3C11B0E</referredTableID>
+<keyObject>871C7524-A93B-B16F-9ABF-D06FFA2E655D</keyObject>
+<referredKeyID>871C7524-A93B-B16F-9ABF-D06FFA2E655D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+</ForeignKeys>
+<mainView class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational" id="01F1298C-E185-8353-B1E3-97301B0062BE">
+<createdBy>Administrator</createdBy>
+<modifiedBy>Administrator</modifiedBy>
+<createdTime>2018-02-22 21:33:25 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="03E1D5C5-9CD5-ADC7-42AA-E3B1A3E9B0DB" otype="Table" vid="17136432-D4A4-6417-DE72-84BCBADAB9A4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="635" y="330" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="10775A4E-4B86-CA25-99E3-A0E325E1D32C" otype="Table" vid="289E809D-2DF5-DA3F-ADB4-BDE53E71FF04">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="71" y="341" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2B9D0ABD-0F3C-1CB2-9FBA-468BA3C11B0E" otype="Table" vid="602E6DCB-AE75-727F-9B5A-9A19EA8BA6BD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="73" y="539" width="170" height="170"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="41619E33-1844-AFBF-16BC-BE577D5FFC5D" otype="Table" vid="A23CA2C7-7908-44BA-DE39-6D46F28176D5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="364" y="599" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E05847EB-E446-93BF-3572-2906289B31CD" otype="Table" vid="BDA80F5E-D142-36AA-0462-3126F4A6AAAA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="78" y="73" width="208" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="ED51E96A-5668-2019-92B6-3F6F07037273" otype="Table" vid="8E867CF4-7D16-D63E-AB8E-00F247D6F02C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="413" y="75" width="197" height="140"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="378AD998-0003-B685-25EB-5B0928DB9C56" otype="FKIndexAssociation" vid_source="602E6DCB-AE75-727F-9B5A-9A19EA8BA6BD" vid_target="A23CA2C7-7908-44BA-DE39-6D46F28176D5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="243" y="654"/>
+<point x="364" y="654"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="38809F62-17A2-1534-D454-BC98E242A485" otype="FKIndexAssociation" vid_source="8E867CF4-7D16-D63E-AB8E-00F247D6F02C" vid_target="17136432-D4A4-6417-DE72-84BCBADAB9A4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="610" y="207"/>
+<point x="658" y="330"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="79705376-5C9D-F1D6-C366-444FD3AF9B39" otype="FKIndexAssociation" vid_source="17136432-D4A4-6417-DE72-84BCBADAB9A4" vid_target="A23CA2C7-7908-44BA-DE39-6D46F28176D5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="696" y="440"/>
+<point x="534" y="599"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="C448A9AE-105E-D40A-188A-D81D8812D03C" otype="FKIndexAssociation" vid_source="8E867CF4-7D16-D63E-AB8E-00F247D6F02C" vid_target="A23CA2C7-7908-44BA-DE39-6D46F28176D5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="473" y="215"/>
+<point x="473" y="599"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="CF693B99-C4FF-FB19-D910-015554AB33F9" otype="FKIndexAssociation" vid_source="BDA80F5E-D142-36AA-0462-3126F4A6AAAA" vid_target="8E867CF4-7D16-D63E-AB8E-00F247D6F02C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="286" y="129"/>
+<point x="413" y="129"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="EDFB17CE-1AB4-C65D-1C8F-74A322152930" otype="FKIndexAssociation" vid_source="289E809D-2DF5-DA3F-ADB4-BDE53E71FF04" vid_target="602E6DCB-AE75-727F-9B5A-9A19EA8BA6BD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="157" y="451"/>
+<point x="157" y="539"/>
+</points>
+</Connector>
+</connectors>
+</mainView>
+</relationalModel>
