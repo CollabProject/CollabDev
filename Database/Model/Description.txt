@@ -1,0 +1,1 @@
+This folder all the artefacts related to Database design and creation scripts.
