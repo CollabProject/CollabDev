@@ -1,7 +1,17 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: Mar 05, 2018 at 07:07 AM
+-- Server version: 5.7.21-0ubuntu0.16.04.1
+-- PHP Version: 7.0.22-0ubuntu0.16.04.1
 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 --
--- Database: `Collaborative Development`
+-- Database: `db1501450`
 --
 
 -- --------------------------------------------------------
@@ -80,7 +90,16 @@ CREATE TABLE `CD_Visit_Question` (
   `AnswerId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `CD_Answer`
+--
+ALTER TABLE `CD_Answer`
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_question_answer` (`QuestionId`);
 
 --
 -- Indexes for table `CD_Course`
@@ -98,16 +117,52 @@ ALTER TABLE `CD_Player`
 -- Indexes for table `CD_Question`
 --
 ALTER TABLE `CD_Question`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_course_question` (`CourseId`);
 
 --
 -- Indexes for table `CD_Visit`
 --
 ALTER TABLE `CD_Visit`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_player_visit` (`PlayerId`);
 
 --
 -- Indexes for table `CD_Visit_Question`
 --
 ALTER TABLE `CD_Visit_Question`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`Id`),
+  ADD KEY `fk_visit_visitquestion` (`VisitId`),
+  ADD KEY `fk_answer_visitquestion` (`AnswerId`),
+  ADD KEY `fk_question_visitquestion` (`QuestionId`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `CD_Answer`
+--
+ALTER TABLE `CD_Answer`
+  ADD CONSTRAINT `fk_question_answer` FOREIGN KEY (`QuestionId`) REFERENCES `CD_Question` (`Id`);
+
+--
+-- Constraints for table `CD_Question`
+--
+ALTER TABLE `CD_Question`
+  ADD CONSTRAINT `fk_course_question` FOREIGN KEY (`CourseId`) REFERENCES `CD_Course` (`Id`);
+
+--
+-- Constraints for table `CD_Visit`
+--
+ALTER TABLE `CD_Visit`
+  ADD CONSTRAINT `fk_player_visit` FOREIGN KEY (`PlayerId`) REFERENCES `CD_Player` (`Id`);
+
+--
+-- Constraints for table `CD_Visit_Question`
+--
+ALTER TABLE `CD_Visit_Question`
+  ADD CONSTRAINT `fk_answer_visitquestion` FOREIGN KEY (`AnswerId`) REFERENCES `CD_Answer` (`Id`),
+  ADD CONSTRAINT `fk_question_visitquestion` FOREIGN KEY (`QuestionId`) REFERENCES `CD_Question` (`Id`),
+  ADD CONSTRAINT `fk_visit_visitquestion` FOREIGN KEY (`VisitId`) REFERENCES `CD_Visit` (`Id`);
+ 
